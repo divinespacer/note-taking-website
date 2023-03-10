@@ -1,6 +1,12 @@
+html {
+  background-color: red;
+}
 body {
   background-color: #f3e9de;
   color: #256993;
+  display: flex;
+  margin: 0;
+  height: 100vh;
 }
 
 button {
@@ -9,8 +15,13 @@ button {
   text-align: center;
   background-color: #375f68;
 }
-.notbody {
+nav {
+  flex-basis: auto;
+  width: 20vw;
   background-color: #faf4ec;
+}
+.mynotes {
+  text-align: center;
 }
 .theme {
   background-color: #56536a;
