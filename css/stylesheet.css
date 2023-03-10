@@ -1,0 +1,21 @@
+body {
+  background-color: #f3e9de;
+  color: #256993;
+}
+
+button {
+  border: none;
+  color: white;
+  text-align: center;
+  background-color: #375f68;
+}
+.notbody {
+  background-color: #faf4ec;
+}
+.theme {
+  background-color: #56536a;
+}
+
+.cancel {
+  background-color: #9b332c;
+}
