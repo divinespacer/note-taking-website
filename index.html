@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <header class="mynotes">
+        <header class="notes">
             <h1>My Notes</h1>
         </header>
         <ul>
@@ -19,22 +19,25 @@
             <li>note two</li>
         </ul>
     </nav>
-    <div>
+    <div class="notes elp">
         <main>
-            <h1>
-                Take Better Notes
-
-            </h1>
-            <p>About</p>
-            <p>Docs</p>
-            <button>New Note</button>
-            <button class="theme">Dark Theme</button>
-            <textarea class="notbody">This is a placeholder</textarea>
-            <button>Save</button>
-            <button class="cancel">Cancel</button>
-            <h2>Keep in Touch</h2>
+            <h1>Take Better Notes</h1>
+            <div class="maingrid">
+                <ul id="about">
+                    <li>About</li>
+                    <li>Docs</li>
+                </ul>
+                <button id="newnote">New Note</button>
+                <button class="theme">Dark Theme</button>
+                <textarea>This is a placeholder</textarea>
+                <div class="save">
+                    <button>Save</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
         </main>
         <footer>
+            <h2>Keep in Touch</h2>
             <a href="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"
                 title="Linkedin Logo">
                 <img src="logos/linkedin.webp" alt="Linkedin Logo" width="50" height="50">

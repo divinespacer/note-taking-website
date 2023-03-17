@@ -1,6 +1,3 @@
-html {
-  background-color: red;
-}
 body {
   background-color: #f3e9de;
   color: #256993;
@@ -8,25 +5,77 @@ body {
   margin: 0;
   height: 100vh;
 }
-
+nav {
+  width: 20%;
+  background-color: #faf4ec;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+}
+.maingrid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  margin: 10px;
+  row-gap: 10px;
+}
 button {
+  border-radius: 10px;
+  padding: 10px;
   border: none;
   color: white;
   text-align: center;
   background-color: #375f68;
 }
-nav {
-  flex-basis: auto;
-  width: 20vw;
-  background-color: #faf4ec;
+textarea {
+  border: 2px solid blue;
+  border-radius: 5px;
+  outline: none;
+  grid-column: 1/4;
+  grid-row: 3/3;
 }
-.mynotes {
-  text-align: center;
+
+#about {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: large;
+  display: flex;
+  gap: 5px;
+  grid-column: 3/3;
+  grid-row: 1/1;
+  align-self: flex-end;
+  justify-self: center;
+}
+#about > li {
+  justify-self: space-between;
+}
+#newnote {
+  grid-column: 1/1;
+  grid-row: 2/2;
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+.save {
+  grid-column: 3/3;
+  grid-row: 4/4;
+  align-self: flex-start;
+  justify-self: flex-end;
 }
 .theme {
   background-color: #56536a;
+  grid-column: 3/3;
+  grid-row: 2/2;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
-
+.elp {
+  width: 100%;
+}
+.notes {
+  text-align: center;
+}
 .cancel {
   background-color: #9b332c;
 }
