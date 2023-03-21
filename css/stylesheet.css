@@ -13,14 +13,20 @@ nav {
 footer {
   text-align: center;
 }
+.mainpage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
 .maingrid {
   display: grid;
-  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-columns: 2fr 3fr 2fr;
   grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
   margin: 0.5rem;
   row-gap: 10px;
 }
 h1 {
+  text-align: center;
   justify-self: center;
   grid-column: 1/4;
   grid-row: 1/1;
@@ -41,7 +47,7 @@ textarea {
   grid-row: 4/4;
 }
 
-#about {
+#aboutdocs {
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -53,16 +59,13 @@ textarea {
   align-self: flex-end;
   justify-self: flex-end;
 }
-#about > li {
-  justify-self: space-between;
-}
 #newnote {
   grid-column: 1/1;
   grid-row: 3/3;
   align-self: flex-end;
   justify-self: flex-start;
 }
-#save {
+#savecancel {
   grid-column: 3/3;
   grid-row: 5/5;
   align-self: flex-start;
@@ -74,14 +77,6 @@ textarea {
   grid-row: 3/3;
   align-self: flex-end;
   justify-self: flex-end;
-}
-.mainpage {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-header {
-  text-align: center;
 }
 #cancel {
   background-color: #9b332c;
@@ -95,9 +90,7 @@ header {
     font-size: 4vw;
   }
   li,
-  button {
-    font-size: 3vw;
-  }
+  button,
   footer {
     font-size: 3vw;
   }
