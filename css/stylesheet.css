@@ -11,16 +11,19 @@ nav {
   background-color: #faf4ec;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 50vw;
+  text-align: center;
 }
 .maingrid {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr 1fr;
-  margin: 10px;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+  margin: 0.5rem;
   row-gap: 10px;
+}
+h1 {
+  justify-self: center;
+  grid-column: 1/4;
+  grid-row: 1/1;
 }
 button {
   border-radius: 10px;
@@ -35,7 +38,7 @@ textarea {
   border-radius: 5px;
   outline: none;
   grid-column: 1/4;
-  grid-row: 3/3;
+  grid-row: 4/4;
 }
 
 #about {
@@ -46,39 +49,41 @@ textarea {
   display: flex;
   gap: 5px;
   grid-column: 3/3;
-  grid-row: 1/1;
+  grid-row: 2/2;
   align-self: flex-end;
-  justify-self: center;
+  justify-self: flex-end;
 }
 #about > li {
   justify-self: space-between;
 }
 #newnote {
   grid-column: 1/1;
-  grid-row: 2/2;
+  grid-row: 3/3;
   align-self: flex-end;
   justify-self: flex-start;
 }
-.save {
+#save {
   grid-column: 3/3;
-  grid-row: 4/4;
+  grid-row: 5/5;
   align-self: flex-start;
   justify-self: flex-end;
 }
-.theme {
+#theme {
   background-color: #56536a;
   grid-column: 3/3;
-  grid-row: 2/2;
+  grid-row: 3/3;
   align-self: flex-end;
   justify-self: flex-end;
 }
 .mainpage {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
-.notes {
+header {
   text-align: center;
 }
-.cancel {
+#cancel {
   background-color: #9b332c;
 }
 
@@ -86,7 +91,21 @@ textarea {
   body {
     flex-direction: column;
   }
+  h1 {
+    font-size: 4vw;
+  }
+  li,
+  button {
+    font-size: 3vw;
+  }
+  footer {
+    font-size: 3vw;
+  }
   nav {
     width: 100vw;
+  }
+  img {
+    height: auto;
+    width: 10%;
   }
 }
