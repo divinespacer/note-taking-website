@@ -4,6 +4,7 @@ body {
   display: flex;
   margin: 0;
   height: 100vh;
+  font-family: "Syne", sans-serif;
 }
 nav {
   width: 20%;
@@ -12,6 +13,7 @@ nav {
 footer {
   position: absolute;
   bottom: 0;
+  left: 50vw;
 }
 .maingrid {
   display: grid;
@@ -70,12 +72,21 @@ textarea {
   align-self: flex-end;
   justify-self: flex-end;
 }
-.elp {
-  width: 100%;
+.mainpage {
+  width: 100vw;
 }
 .notes {
   text-align: center;
 }
 .cancel {
   background-color: #9b332c;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    width: 100vw;
+  }
 }
