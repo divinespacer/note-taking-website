@@ -1,3 +1,11 @@
+.darkMode {
+  background-color: purple;
+  color: white;
+}
+.navDarkMode {
+  background-color: darkviolet;
+  color: white;
+}
 body {
   background-color: #f3e9de;
   color: #256993;
@@ -6,6 +14,7 @@ body {
   height: 100vh;
   font-family: "Syne", sans-serif;
 }
+
 nav {
   width: 20%;
   background-color: #faf4ec;
