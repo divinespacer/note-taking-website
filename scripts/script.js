@@ -4,6 +4,10 @@ const txtArea = document.querySelector("textarea");
 const saveCancel = document.querySelector("#savecancel");
 const mainGrid = document.querySelector(".maingrid");
 const noteList = document.querySelector("nav ul");
+let notesArray = [
+  { title: "note one", body: "this is my first note" },
+  { title: "note two", body: "this is my second note" },
+];
 
 function themeToggle(event) {
   console.log(event);
@@ -33,10 +37,6 @@ function newNote(event) {
 }
 mainGrid.addEventListener("click", newNote);
 
-let notesArray = [
-  { title: "note one", body: "this is my first note" },
-  { title: "note two", body: "this is my second note" },
-];
 function saveNote(event) {
   console.log(event);
   if (event.target.textContent === "Save") {
