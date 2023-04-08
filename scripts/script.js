@@ -37,7 +37,6 @@ let notesArray = [
   { title: "note one", body: "this is my first note" },
   { title: "note two", body: "this is my second note" },
 ];
-
 function saveNote(event) {
   console.log(event);
   if (event.target.textContent === "Save") {
@@ -53,5 +52,14 @@ function saveNote(event) {
     console.log(notesArray);
   }
 }
-
 saveCancel.addEventListener("click", saveNote);
+
+function displayNote(event) {
+  console.log(event);
+  for (let note of notesArray) {
+    if (event.target.textContent === note.title) {
+      txtArea.value = note.body;
+    }
+  }
+}
+noteList.addEventListener("click", displayNote);
